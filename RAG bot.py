@@ -11,6 +11,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains.history_aware_retriever import create_history_aware_retriever
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_core.messages import HumanMessage, AIMessage
 from langchain_groq import ChatGroq
 
 groq_api_key = st.secrets["GROQ_API_KEY"]
