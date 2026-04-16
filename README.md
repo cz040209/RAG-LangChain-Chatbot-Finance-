@@ -124,30 +124,8 @@ Evaluation topics include:
 - Crypto fraud
 - AI financial fraud
 - Investment tips
+<img width="1119" height="198" alt="image" src="https://github.com/user-attachments/assets/735cd8bd-f5f7-48cd-87e1-eea54cb261d8" />
 
----
-
-## 🖥️ How to Run
-
-1. Install dependencies:
-pip install -r requirements.txt
-
-2. Set API key:
-GROQ_API_KEY=your_api_key
-
-3. Run Streamlit app:
-streamlit run app.py
-
----
-
-## 📦 Project Structure
-financebot-rag/
-│── finance_dataset/        # scraped financial articles
-│── finance_faiss_index/    # FAISS vector store
-│── app.py                  # Streamlit chatbot UI
-│── rag_pipeline.py        # RAG logic (retrieval + LLM)
-│── requirements.txt
-│── README.md
 
 ---
 
