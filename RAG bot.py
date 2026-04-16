@@ -13,22 +13,13 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
-# -------------------------------
-# 🔑 Load API Key
-# -------------------------------
 load_dotenv(".env.txt")
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
-# -------------------------------
-# 🧠 Streamlit UI Setup
-# -------------------------------
 st.set_page_config(page_title="FinanceBot", layout="wide")
 st.title("💰 FinanceBot")
 st.write("Ask questions about finance, investing, or scams")
 
-# -------------------------------
-# 💾 Cache RAG system (important)
-# -------------------------------
 @st.cache_resource
 def load_rag():
     # Load documents (your dataset folder)
@@ -93,15 +84,9 @@ End with: ⚠️ Educational purposes only."""
 
 rag_chain = load_rag()
 
-# -------------------------------
-# 🧠 Chat memory (Streamlit way)
-# -------------------------------
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-# -------------------------------
-# 💬 Chat UI
-# -------------------------------
 user_input = st.chat_input("Ask something about finance...")
 
 if user_input:
@@ -133,8 +118,5 @@ if user_input:
     st.session_state.chat_history.append(("user", user_input))
     st.session_state.chat_history.append(("assistant", answer))
 
-# -------------------------------
-# 🔄 Reset button
-# -------------------------------
 if st.sidebar.button("Reset Chat"):
     st.session_state.chat_history = []
