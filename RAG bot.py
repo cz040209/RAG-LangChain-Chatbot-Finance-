@@ -13,7 +13,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
-load_dotenv(".env.txt")
 groq_api_key = st.secrets["GROQ_API_KEY"]
 
 st.set_page_config(page_title="FinanceBot", layout="wide")
