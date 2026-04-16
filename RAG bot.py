@@ -115,8 +115,8 @@ if user_input:
         st.write(", ".join(sources))
 
     # Save history
-    st.session_state.chat_history.append(("user", user_input))
-    st.session_state.chat_history.append(("assistant", answer))
+    st.session_state.chat_history.append(HumanMessage(content=user_input))
+    st.session_state.chat_history.append(AIMessage(content=answer))
 
 if st.sidebar.button("Reset Chat"):
     st.session_state.chat_history = []
