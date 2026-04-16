@@ -21,9 +21,6 @@ The system focuses on financial literacy, scam awareness, and investment educati
 
 ## 🚀 Technologies Used
 
-**Frontend:**
-- Streamlit
-
 **Backend / Core AI:**
 - Python
 - LangChain
