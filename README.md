@@ -103,12 +103,6 @@ Constraints:
 ## 🔗 RAG Pipeline Flow
 Retriever → Relevant Document Chunks → Prompt Injection → LLM → Structured Response
 
-Implementation:
-create_retrieval_chain(
-    retriever,
-    create_stuff_documents_chain(llm, prompt)
-)
-
 ---
 
 ## 💬 Conversation Memory
@@ -167,18 +161,9 @@ financebot-rag/
 
 ## 🔮 Future Improvements
 - Real-time financial news API integration
-- Hybrid retrieval (BM25 + FAISS)
+- Hybrid retrieval
 - LangGraph-based memory system
-- Better citation UI in Streamlit
 - Deployment with authentication system
-
----
-
-## 👨‍💻 Author
-Developed as a Data Science / AI Engineering project focusing on:
-- Retrieval-Augmented Generation (RAG)
-- Financial NLP systems
-- End-to-end LLM application design
 
 ---
 
