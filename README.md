@@ -1,4 +1,4 @@
-# 💰 FinanceBot – Retrieval-Augmented Financial Education AI Assistant
+# 💰 VeriFinance – Retrieval-Augmented Financial Education AI Assistant
 
 ## 🌟 Project Overview
 FinanceBot is a Retrieval-Augmented Generation (RAG) based AI assistant designed to provide accurate and structured financial education. It retrieves verified information from trusted financial sources (such as SEC Investor.gov) and uses a Large Language Model (LLM) to generate clear, educational responses.
