@@ -6,10 +6,11 @@ FinanceBot is a Retrieval-Augmented Generation (RAG) based AI assistant designed
 The system focuses on financial literacy, scam awareness, and investment education while ensuring responses are grounded in real documents rather than hallucinated content.
 
 Example question 1:
-<img width="1389" height="424" alt="image" src="https://github.com/user-attachments/assets/4fa0c032-126d-4d7b-a74b-46cdf81170ba" />
-
+<img width="1894" height="816" alt="image" src="https://github.com/user-attachments/assets/114265c6-bb9c-4d14-8242-4fb4f23b4504" />
+<br>
 Example question 2:
-<img width="1391" height="525" alt="image" src="https://github.com/user-attachments/assets/ac16e251-07a0-4d24-91c0-1394225f7f6c" />
+<img width="1891" height="603" alt="image" src="https://github.com/user-attachments/assets/fb6baf02-83c6-49db-8848-a80793380561" />
+<br>
 
 ---
 
