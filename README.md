@@ -27,6 +27,9 @@ Example question 2:
 
 ## 🚀 Technologies Used
 
+**Frontend / UI:**
+- Streamlit
+
 **Backend / Core AI:**
 - Python
 - LangChain
